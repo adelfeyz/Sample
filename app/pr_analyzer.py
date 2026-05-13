@@ -8,7 +8,7 @@ def analyze_prs(prs):
             "total_prs": total_prs,
             "ai_assisted_prs": ai_assisted_prs,
             "non_ai_assisted_prs": non_ai_assisted_prs,
-            "ai_usage_rate": round(ai_assisted_prs / total_prs, 2) if total_prs else 0
-            #"ai_usage_rate": 999
+            "ai_usage_rate": round(ai_assisted_prs / total_prs, 2) if total_prs else 0,
+            # "ai_usage_rate": 999
         }
     }
