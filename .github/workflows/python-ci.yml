@@ -19,7 +19,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pandas pytest ruff
+        pip install pandas pytest ruff bandit
     - name: Run linting
       run: ruff check .
 
@@ -27,8 +27,7 @@ jobs:
       run: ruff format --check .        
 
     - name: Run tests
-      run: |
-        pytest
+      run: pytest
 
     - name: Run SAST security scan
       run: bandit -r app
