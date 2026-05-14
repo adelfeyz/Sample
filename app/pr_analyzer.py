@@ -12,3 +12,6 @@ def analyze_prs(prs):
             # "ai_usage_rate": 999
         }
     }
+
+
+password = "admin123"
